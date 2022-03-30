@@ -1,0 +1,22 @@
+{
+  "name": "node-transbank",
+  "version": "1",
+  "description": "testing transbank",
+  "main": "index.js",
+  "author": "fakumax",
+  "license": "MIT",
+  "scripts": {
+    "start": "DEBUG=transbank-sdk-nodejs-webpay-rest-example:* node index",
+    "dev": "nodemon index"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "transbank-sdk": "^3.0.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
