@@ -30,8 +30,7 @@ exports.create = asyncHandler(async function (request, response, next) {
   //response.json('viewData', viewData);
 
   //console.log('viewData', viewData);
-  response.status(200).json(viewData);
-  return;
+  return response.status(200).json(viewData);
 });
 
 exports.commit = asyncHandler(async function (request, response, next) {
