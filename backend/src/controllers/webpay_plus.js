@@ -28,8 +28,6 @@ exports.create = asyncHandler(async function (request, response, next) {
   };
 
   //response.json('viewData', viewData);
-
-  //console.log('viewData', viewData);
   return response.status(200).json(viewData);
 });
 

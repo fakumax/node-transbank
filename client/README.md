@@ -1,3 +1,0 @@
-### CLIENT
-
-With Nextjs
