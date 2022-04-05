@@ -2,6 +2,8 @@ const WebpayPlus = require('transbank-sdk').WebpayPlus;
 const asyncHandler = require('../utils/async_handler');
 
 exports.create = asyncHandler(async function (request, response, next) {
+  const algo = request.body;
+
   let buyOrder = 'O-' + Math.floor(Math.random() * 10000) + 1;
   let sessionId = 'S-' + Math.floor(Math.random() * 10000) + 1;
   let amount = Math.floor(Math.random() * 1000) + 1001;
@@ -28,6 +30,8 @@ exports.create = asyncHandler(async function (request, response, next) {
   };
 
   //response.json('viewData', viewData);
+
+  console.log('body', algo);
   return response.status(200).json(viewData);
 });
 
